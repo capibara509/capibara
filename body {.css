@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del contenedor de la calculadora */
+.calculator {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombra para efecto de profundidad */
+    width: 320px; /* Ajusta el tamaño de la calculadora */
+    border: 5px solid #444; /* Borde que simula el borde de una calculadora */
+}
+
+/* Estilo del display */
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Contenedor de los botones */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas para los botones */
+    grid-gap: 10px;
+}
+
+/* Estilo de los botones */
+button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Botón cero que ocupa dos columnas */
+button.zero {
+    grid-column: span 2; /* El botón de "0" ocupa dos columnas */
+}
+
+/* Estilo para los botones especiales como "C" y "=" */
+button.special {
+    background-color: #e67e22; /* Color especial para estos botones */
+}
+
+button.special:hover {
+    background-color: #d35400;
+}
