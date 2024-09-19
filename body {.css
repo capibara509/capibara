@@ -1,6 +1,19 @@
-body{background-color: bisque
-    ;}
-h1{color: black;}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+img {
+    max-width: 100%; 
+    height: auto;    
+    border: 2px solid #333; 
+    border-radius: 8px; 
+}
+h1{
+    color : #333;
 
-p{color: rgb(0, 0, 0)
-    ;}
+    p{
+        color:#333 #333;
+    }
+
+}
