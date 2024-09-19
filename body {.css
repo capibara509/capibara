@@ -1,28 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 50px;
-}
-img {
-    max-width: 100%; 
-    height: auto;    
-    border: 2px solid #333; 
-    border-radius: 8px; 
-}
-h1{
-    color : #333;
-
-    p{
-        color:#333 #333;
-    }
-
-}
-img{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0; /* Elimina márgenes por defecto del body */
+    height: 100vh; /* Altura completa de la ventana */
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100%;
+    flex-direction: column; /* Coloca las imágenes en columna */
+    justify-content: space-around; /* Espacio uniforme entre imágenes */
+    align-items: center; /* Centra horizontalmente */
 }
+
+.img-center {  
+    display: block;        /* Cambia a block para que funcione el margen */  
+    margin-left: auto;    /* Margen automático a la izquierda */  
+    margin-right: auto;
+        /* Margen automático a la derecha */  
+}  
+
